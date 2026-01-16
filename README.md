@@ -1,4 +1,4 @@
-[![Codespaces Prebuilds](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/codespaces/create_codespaces_prebuilds)
+[![Codespaces Prebuilds](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg?branch=main)](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/codespaces/create_codespaces_prebuilds)
 
 [![CI](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/main.yml/badge.svg)](https://github.com/AnkitG0204/functions-from-zero2/actions/workflows/main.yml)
 
