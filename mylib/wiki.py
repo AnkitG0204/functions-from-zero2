@@ -33,3 +33,4 @@ def get_wiki_keywords(page):
     keywords = extractor.extract_keywords(content)
     # return a dictionary of the top 10 keywords
     return {keyword: score for keyword, score in keywords[:10]}
+

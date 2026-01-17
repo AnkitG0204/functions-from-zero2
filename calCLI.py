@@ -70,5 +70,5 @@ def power_cmd(a, b):
     click.secho(f"{a} ** {b} = {power(a, b)}", fg="green")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     cli()

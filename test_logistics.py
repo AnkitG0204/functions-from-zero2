@@ -1,3 +1,4 @@
+from operator import concat
 from mylib.logistics import (
     CITIES,
     distance_between_two_points,
@@ -67,3 +68,34 @@ def test_travel_time(client):
     )
     assert response.status_code == 200
     assert response.json() == {"travel_time": "41 hours"}
+
+#write tests for all functions of wiki.py
+from mylib.wiki import (
+    get_wiki_summary,
+    search_wiki_pages,
+    get_wiki_page,
+    get_wiki_keywords,
+)
+def test_get_wiki_summary():
+    summary = get_wiki_summary("Python (programming language)")
+    assert "Python " in summary
+
+def test_search_wiki_pages():
+    results = search_wiki_pages("Python")
+    assert "Python (programming language)" in results
+
+def test_get_wiki_page():
+    page = get_wiki_page("Python (programming language)")
+    assert page.title == "Python (programming language)"
+
+def test_get_wiki_keywords():
+    keywords = get_wiki_keywords("Python (programming language)")
+    assert "Python" in keywords
+
+def test_keywords_endpoint(client):
+    response = client.post(
+        "/keywords",
+        json={"name": "Python (programming language)"},
+    )
+    assert response.status_code == 200
+    assert "keywords" in response.json()

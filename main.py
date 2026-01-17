@@ -73,6 +73,6 @@ async def keywords(city: City):
     return {"keywords": get_wiki_keywords(city.name)}
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
 
     uvicorn.run(app, port=8080, host="0.0.0.0")
